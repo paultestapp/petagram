@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Petagram</string>
+    <string name="activity_listado">Tus preferidas</string>
+    <string name="label_add_fav">Agregado a favoritos</string>
+    <string name="label_fav_action">Fav Action</string>
+    <string name="label_add_like">Like agregado a </string>
+
+    <string name="label_name_cv">Mascota</string>
+    <string name="label_count_cv">0</string>
+
+    <string name="menu_top">0</string>
+    <string name="label_take_photo">Presionado boton para tomar foto</string>
+
 </resources>

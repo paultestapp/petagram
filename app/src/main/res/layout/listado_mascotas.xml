@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,7 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.psf.petagram.MainActivity">
+    tools:context="com.psf.petagram.ListadoMascotas">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -25,22 +24,7 @@
         android:layout_below="@id/main_actionbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/recycleview_padding_botton"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btn_fab"
-        android:onClick="fabAction"
-        android:layout_width="@dimen/fab_size"
-        android:layout_height="@dimen/fab_size"
-        android:elevation="@dimen/fab_elevation"
-        android:src="@drawable/ic_camera_24dp"
-        android:tint="@color/colorWhite"
-        android:layout_gravity="end|bottom"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        />
-
 </android.support.design.widget.CoordinatorLayout>
-

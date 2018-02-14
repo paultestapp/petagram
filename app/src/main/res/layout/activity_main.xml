@@ -18,28 +18,31 @@
         <include android:id="@+id/main_actionbar"
             layout="@layout/toolbar"
             />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_mascotas"
-        android:layout_below="@id/main_actionbar"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/recycleview_padding_botton"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/btn_fab"
-        android:onClick="fabAction"
+        android:onClick="btnPhotoAction"
         android:layout_width="@dimen/fab_size"
         android:layout_height="@dimen/fab_size"
         android:elevation="@dimen/fab_elevation"
         android:src="@drawable/ic_camera_24dp"
         android:tint="@color/colorWhite"
         android:layout_gravity="end|bottom"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        android:layout_marginRight="@dimen/fab_margin_end"
         />
 
 </android.support.design.widget.CoordinatorLayout>

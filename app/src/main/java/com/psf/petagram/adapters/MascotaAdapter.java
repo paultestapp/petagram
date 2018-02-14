@@ -1,4 +1,4 @@
-package com.psf.petagram;
+package com.psf.petagram.adapters;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.psf.petagram.R;
+import com.psf.petagram.models.Mascota;
 
 import java.util.ArrayList;
 

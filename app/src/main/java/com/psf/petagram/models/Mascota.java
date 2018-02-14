@@ -1,4 +1,4 @@
-package com.psf.petagram;
+package com.psf.petagram.models;
 
 /**
  * Created by paulsalcedo on 13/2/18.

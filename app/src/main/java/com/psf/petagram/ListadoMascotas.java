@@ -7,6 +7,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.psf.petagram.adapters.MascotaAdapter;
+import com.psf.petagram.models.Mascota;
+
 import java.util.ArrayList;
 
 public class ListadoMascotas extends AppCompatActivity {

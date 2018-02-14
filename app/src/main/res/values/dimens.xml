@@ -14,7 +14,8 @@
     <dimen name="layout_padding">10dp</dimen>
     <dimen name="toolbar_elevation">4dp</dimen>
 
-    <dimen name="fab_margin">10dp</dimen>
+    <dimen name="fab_margin_end">20dp</dimen>
+    <dimen name="fab_margin_bottom">50dp</dimen>
     <dimen name="fab_size">56dp</dimen>
     <dimen name="fab_elevation">12dp</dimen>
 
@@ -36,4 +37,7 @@
     <dimen name="cv_text">22sp</dimen>
 
     <dimen name="like_btn">40dp</dimen>
+
+    <dimen name="circularimage_size">150dp</dimen>
+    <dimen name="photogrid_size">80dp</dimen>
 </resources>

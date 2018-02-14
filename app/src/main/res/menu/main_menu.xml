@@ -8,4 +8,10 @@
         android:icon="@drawable/ic_fivestars_48"
         app:showAsAction="always"
         android:title="@string/menu_top" />
+    <item
+        android:id="@+id/menu_contact"
+        android:title="@string/menu_contact" />
+    <item
+        android:id="@+id/menu_about"
+        android:title="@string/menu_about" />
 </menu>

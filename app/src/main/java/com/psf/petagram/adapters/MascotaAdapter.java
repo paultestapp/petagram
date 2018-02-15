@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.psf.petagram.R;
+import com.psf.petagram.interactors.MascotaConstructor;
 import com.psf.petagram.models.Mascota;
 
 import java.util.ArrayList;
@@ -40,7 +41,7 @@ public class MascotaAdapter extends  RecyclerView.Adapter<MascotaAdapter.Mascota
     }
 
     @Override
-    public void onBindViewHolder(MascotaViewHolder mascotaViewHolder, int i) {
+    public void onBindViewHolder(final MascotaViewHolder mascotaViewHolder, int i) {
         final int idx = i;
 
         final Mascota mascota = mascotas.get(idx);
@@ -56,6 +57,11 @@ public class MascotaAdapter extends  RecyclerView.Adapter<MascotaAdapter.Mascota
                 String message = resources.getString(R.string.label_add_like) + " " + mascota.getNombre();
                 Snackbar.make(view, message, Snackbar.LENGTH_SHORT)
                         .show();
+
+                MascotaConstructor constructor = new MascotaConstructor(activity);
+                constructor.addLike(mascota);
+
+                mascotaViewHolder.tv_likes.setText(String.valueOf(constructor.getLikes(mascota)));
             }
         });
 

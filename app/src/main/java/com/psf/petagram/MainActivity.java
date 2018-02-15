@@ -15,8 +15,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.psf.petagram.adapters.PageAdapter;
-import com.psf.petagram.fragments.HomeFragment;
-import com.psf.petagram.fragments.PerfilFragment;
+import com.psf.petagram.views.activities.TopMascotas;
+import com.psf.petagram.views.fragments.HomeFragment;
+import com.psf.petagram.views.fragments.PerfilFragment;
 
 import java.util.ArrayList;
 
@@ -85,8 +86,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_topmascotas:
-                Intent iListado = new Intent(MainActivity.this, ListadoMascotas.class);
-                startActivity(iListado);
+                Intent iTop = new Intent(MainActivity.this, TopMascotas.class);
+                startActivity(iTop);
                 break;
             case R.id.menu_contact:
                 Intent iContact = new Intent(MainActivity.this, ContactoActivity.class);

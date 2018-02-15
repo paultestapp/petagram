@@ -5,6 +5,7 @@ package com.psf.petagram.models;
  */
 
 public class Mascota {
+    private int id;
     private int foto;
     private String nombre;
     private int likes;
@@ -18,6 +19,17 @@ public class Mascota {
     public Mascota(String nombre, int likes) {
         this.nombre = nombre;
         this.likes = likes;
+    }
+
+    public Mascota() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getFoto() {

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Petagram</string>
-    <string name="activity_listado">Tus preferidas</string>
+    <string name="activity_topmascotas">Top 5</string>
     <string name="activity_contacto">Contacto</string>
     <string name="label_add_fav">Agregado a favoritos</string>
     <string name="label_fav_action">Fav Action</string>
@@ -17,7 +17,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="pet_temp_name">Ank</string>
+    <string name="pet_temp_name">Shizu</string>
     <string name="hint_nombre">Nombre</string>
     <string name="hint_email">Email</string>
     <string name="hint_mensaje">Mensaje</string>
@@ -27,7 +27,7 @@
     <string name="msg_sending_form_mail">Su mensaje esta siendo enviando</string>
     <string name="msg_failed_form_mail">No se pudo enviar el mensaje</string>
     <string name="about_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</string>
-    <string name="about_name">Nombre Desarrollador</string>
+    <string name="about_name">Lorem ipsum</string>
     <string name="activity_acercade">Acerca de</string>
 
 </resources>

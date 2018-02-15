@@ -1,4 +1,4 @@
-package com.psf.petagram.fragments;
+package com.psf.petagram.views.fragments;
 
 
 import android.os.Bundle;

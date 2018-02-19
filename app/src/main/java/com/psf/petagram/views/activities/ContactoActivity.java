@@ -1,4 +1,4 @@
-package com.psf.petagram;
+package com.psf.petagram.views.activities;
 
 import android.content.res.Resources;
 import android.support.design.widget.Snackbar;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.psf.petagram.R;
 import com.psf.petagram.models.MensajeMail;
 import com.psf.petagram.util.MailUtil;
 

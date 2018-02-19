@@ -15,6 +15,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.psf.petagram.adapters.PageAdapter;
+import com.psf.petagram.views.activities.Acercade;
+import com.psf.petagram.views.activities.Configuracion;
+import com.psf.petagram.views.activities.ContactoActivity;
 import com.psf.petagram.views.activities.TopMascotas;
 import com.psf.petagram.views.fragments.HomeFragment;
 import com.psf.petagram.views.fragments.PerfilFragment;
@@ -96,6 +99,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menu_about:
                 Intent iAbout = new Intent(MainActivity.this, Acercade.class);
                 startActivity(iAbout);
+                break;
+            case R.id.menu_account_settings:
+                Intent iAccount = new Intent(MainActivity.this, Configuracion.class);
+                startActivity(iAccount);
                 break;
         }
 

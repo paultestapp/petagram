@@ -1,8 +1,10 @@
-package com.psf.petagram;
+package com.psf.petagram.views.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+
+import com.psf.petagram.R;
 
 public class Acercade extends AppCompatActivity {
 

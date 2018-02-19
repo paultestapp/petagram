@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.psf.petagram.R;
 import com.psf.petagram.models.Foto;
 
@@ -20,6 +22,7 @@ import java.util.ArrayList;
 
 public class FotoAdapter extends  RecyclerView.Adapter<FotoAdapter.FotoViewHolder> {
 
+    View view;
     private ArrayList<Foto> fotos;
 
     public FotoAdapter(ArrayList<Foto> fotos) {
@@ -28,7 +31,7 @@ public class FotoAdapter extends  RecyclerView.Adapter<FotoAdapter.FotoViewHolde
 
     @Override
     public FotoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.carview_fotos, parent, false);
+        view = LayoutInflater.from(parent.getContext()).inflate(R.layout.carview_fotos, parent, false);
         return new FotoViewHolder(view);
     }
 
@@ -36,7 +39,11 @@ public class FotoAdapter extends  RecyclerView.Adapter<FotoAdapter.FotoViewHolde
     public void onBindViewHolder(FotoViewHolder fotoViewHolder, int i) {
         final Foto foto = fotos.get(i);
 
-        fotoViewHolder.iv_photo.setImageResource(foto.getFoto());
+//        fotoViewHolder.iv_photo.setImageResource(foto.getFoto());
+        Glide.with(view)
+                .load(foto.getFoto_url())
+                .apply(new RequestOptions().placeholder(R.drawable.ic_camera_24dp))
+                .into(fotoViewHolder.iv_photo);
         fotoViewHolder.tv_likes.setText(String.valueOf(foto.getLikes()));
     }
 

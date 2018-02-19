@@ -3,6 +3,7 @@
     package="com.psf.petagram">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -20,7 +21,7 @@
         </activity>
         <activity android:name=".DetalleMascota" />
         <activity
-            android:name=".ContactoActivity"
+            android:name=".views.activities.ContactoActivity"
             android:label="@string/activity_contacto"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -28,7 +29,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Acercade"
+            android:name=".views.activities.Acercade"
             android:label="@string/activity_acercade"
             android:parentActivityName=".MainActivity">
             >
@@ -40,6 +41,15 @@
             android:name=".views.activities.TopMascotas"
             android:label="@string/activity_topmascotas"
             android:parentActivityName=".MainActivity">
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.activities.Configuracion"
+            android:label="@string/activity_configuracion"
+            android:parentActivityName=".MainActivity"
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

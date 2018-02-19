@@ -29,5 +29,19 @@
     <string name="about_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</string>
     <string name="about_name">Lorem ipsum</string>
     <string name="activity_acercade">Acerca de</string>
+    <string name="menu_account_settings">Configurar Cuenta</string>
+    <string name="btn_label_save_account">Guardar Cuenta</string>
+    <string name="hint_enter_user">Ingresa tu usuario</string>
+    <string name="error_empty_field">Debe ingresar un nombre de cuenta</string>
+    <string name="tag_preferences_name">MAIN_PREFERENCES</string>
+    <string name="tab_name_account">NAME_ACCOUNT</string>
+    <string name="success_save_account">La cuenta ha sido guardada</string>
+    <string name="activity_configuracion">Configuración</string>
+    <string name="error_user_load">Ocurrió un error cargando los datos del usuario</string>
+    <string name="error_connection">Ocurrio un error al conectarse, por favor recargue la app</string>
+    <string name="tab_user_photo">TAB_USER_PHOTO</string>
+    <string name="tab_user_fullname">TAB_USER_FULLNAME</string>
+    <string name="tab_user_id">TAB_USER_ID</string>
+    <string name="label_is_not_config">Debe configurar una cuenta</string>
 
 </resources>
